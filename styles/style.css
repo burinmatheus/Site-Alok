@@ -1,0 +1,447 @@
+html {
+    font: 16px 'Oswald', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+#all {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 80em;
+    min-width: 20em;
+    border: 1px solid red;
+}
+
+#banner #banneralok {
+    width: 100%;
+}
+
+#banner #bannerlogo {
+    position: absolute;
+    width: 100%;
+    max-width: 22em;
+    height: auto;
+    left: 50px;
+    top: 310px;
+}
+
+#content #cabecalho {
+    background-color: black;
+    height: 3.5em;
+    width: 100%;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
+#content #cabecalho img {
+    margin: .6em 0 0 1em;
+}
+
+#content #cabecalho #menu {
+    vertical-align: super;
+    display: inline-block;
+    text-align: -webkit-center;
+    width: 70%;
+    margin-left: 1.8em;
+}
+
+#content #menu a {
+    color: white;
+    font-size: 1.62em;
+    text-decoration: none;
+    margin: 0 .2em;
+    vertical-align: center;
+}
+
+.titulo-pag {
+    font-size: 4.5em;
+    color: #484848;
+    display: inline-block;
+    transform: rotate(-90deg);
+    width: 1.3em;
+    height: .2em;
+    margin: 0;
+}
+
+
+/*BIOGRAFIA*/
+
+.bio {
+    border: 1px solid white;
+    padding-top: 5em;
+    position: relative;
+}
+
+.bio div {
+    display: inline-block;
+    width: 49%;
+    text-align: justify;
+    line-height: 1.4em;
+    margin: 2.5em 2em 2em 2em;
+}
+
+.bio div p+p {
+    text-indent: 1.5em;
+    margin-top: 0
+}
+
+.bio img {
+    width: 37.4%;
+    max-width: 25em;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+/*NEWS*/
+
+.news {
+    width: 100%;
+    background-color: #F8F8F8;
+    padding-top: 5em;
+}
+
+.news #titulo-noticias {
+    margin-bottom: 1.4em;
+}
+
+.news #alok-noticias {
+    vertical-align: bottom;
+    width: 100%;
+    max-width: 28em;
+}
+
+.news .bloco-news {
+    display: inline-block;
+    width: 36%;
+    float: right;
+    margin-right: 3%;
+    margin-top: 2em;
+}
+
+.news .bloco-news figure {
+    background-color: rgba(196, 196, 196, 0.29);
+    width: 100%;
+    max-width: 10.2em;
+    box-shadow: 0.13em 0.25em 0.25em rgba(0, 0, 0, 0.05);
+    border-radius: 1.19em;
+    margin: 0;
+    display: inline-block;
+    margin: 2% 1%;
+}
+
+.bloco-news figure .alok-news {
+    width: 100%;
+    max-width: 10.2em;
+    height: auto;
+    border-radius: 19px 19px 0px 0px;
+}
+
+.bloco-news figure .card-conteudo {
+    margin: 0 .7em;
+}
+
+.bloco-news figure .card-conteudo a {
+    font-size: .9em;
+    display: block;
+}
+
+.bloco-news figure .card-conteudo img {
+    width: 3em;
+}
+
+.bloco-news figure .card-conteudo p {
+    margin: .2em;
+    color: #949393;
+    font-size: .7em;
+    text-align: end;
+}
+
+
+/*DIVISOR*/
+
+.divisor {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    height: 30em;
+}
+
+.divisor #player {
+    position: relative;
+    top: -8em;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45em;
+    filter: blur(0.5em);
+}
+
+.divisor #bloqueiovid {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 30em;
+}
+
+.divisor #redes-sociais {
+    position: absolute;
+    z-index: 3;
+    top: 11em;
+    width: 100%;
+    text-align: center;
+}
+
+.divisor #redes-sociais h1 {
+    margin: 0;
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+
+
+/*SHOWS*/
+
+.shows {
+    width: 100%;
+    display: inline-block;
+    padding-top: 5em;
+}
+
+.shows #container-shows {
+    display: inline-block;
+    margin-left: 3em;
+    width: 85%;
+    box-sizing: border-box;
+}
+
+.show {
+    font-weight: bolder;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: .1em;
+}
+
+.barrinha {
+    width: .5em;
+    height: 4.7em;
+    background-color: #C4C4C4;
+    color: #C4C4C4;
+    vertical-align: top;
+    display: none;
+}
+
+.show:hover {
+    background-color: rgba(43, 41, 41, 0.54);
+}
+
+.show:hover .barrinha {
+    display: inline-block;
+}
+
+.show .dir {
+    margin-left: .75em;
+}
+
+.show:hover .dir {
+    margin-left: 0;
+}
+
+.show .esq p,
+.show .cen p,
+.show .dir a {
+    display: inline-block;
+    margin: 0;
+}
+
+.show .esq,
+.show .cen,
+.show .dir {
+    width: 31.8%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: .5em 0;
+}
+
+.show .esq h2 {
+    -webkit-text-stroke-width: .02em;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    color: black;
+    margin: 0 0 .2em 0;
+    font-size: 2em;
+}
+
+.show .dir {
+    text-align: right;
+}
+
+.show .dir a {
+    padding: .5em 1.5em;
+    border: .13em solid white;
+    margin-left: .7em;
+}
+
+.show .dir a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/*MÚSICAS*/
+
+.musicas {
+    margin-top: 6em;
+}
+
+.musicas #conteudo-musica,
+.musicas #conteudo-musica div {
+    display: inline-block;
+}
+
+.musicas #conteudo-musica {
+    margin-left: 2em;
+}
+
+.musicas #conteudo-musica #spotify {
+    border-radius: 1em;
+    filter: brightness(0.5);
+    transition: 1s;
+}
+
+.musicas #conteudo-musica #spotify:hover {
+    border-radius: 1em;
+    filter: brightness(1);
+}
+
+.musicas #sptf-perfil img {
+    border-radius: 10em;
+    width: 300;
+    height: auto;
+}
+
+
+/*FOTOS*/
+
+.fotos {
+    width: 100%;
+    height: 29em;
+}
+
+.linha {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: max-content;
+    clear: both;
+}
+
+.fotos .post {
+    display: block;
+    float: left;
+    width: calc(100% / 6);
+    padding: 0 0.2em;
+    box-sizing: border-box;
+}
+
+.fotos figure {
+    margin: 0;
+    position: relative;
+}
+
+.fotos figure img {
+    width: 100%;
+}
+
+.fotos figure:hover img {
+    transition: .2s;
+}
+
+.fotos figure figcaption {
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom: .2em;
+    text-align: center;
+    font-size: .9em;
+    line-height: 1.9em;
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0 #000;
+}
+
+.fotos figure:hover img {
+    filter: blur(1.5px);
+}
+
+.fotos figure:hover figcaption {
+    display: block;
+}
+
+
+/*FOOTER*/
+
+#footer {
+    background: url(../img/rodape.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    vertical-align: bottom;
+    color: black;
+}
+
+#footer .rodape-div .rodape-esq,
+#footer .rodape-div .rodape-cen,
+#footer .rodape-div .rodape-dir {
+    width: calc(99% / 3);
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#footer .rodape-div .rodape-esq h1,
+#footer .rodape-div .rodape-dir h1 {
+    color: rgba(239, 239, 239, 0.8);
+    font-size: 48px;
+    text-shadow: 1px 2px 3px #fff, 0 0 0 #000;
+    border-bottom: 3px solid rgba(239, 239, 239, 0.8);
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+
+/*NEWSLETTER*/
+
+#footer .rodape-esq #newsletter p {
+    margin: 0;
+}
+
+
+/*DEPOIMENTOS*/
+
+
+/*MAPA DO SITE*/
+
+
+/*RODAPÉ COPY*/
+
+#footer .rodape-div .rodape-copy p {
+    margin: .3em 0 0 0;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+#footer .rodape-div .rodape-copy a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+#footer .rodape-div .rodape-copy a:hover {
+    color: rgba(0, 0, 0, 1);
+}

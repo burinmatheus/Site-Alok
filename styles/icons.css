@@ -1,0 +1,45 @@
+/*ICONES REDES SOCIAIS*/
+
+.icone {
+    background-image: url(../img/22235-.png);
+    size: 3em;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+.icone.facebook {
+    background-position: 0 -4px;
+    width: 57px;
+    height: 57px;
+}
+
+.icone.twitter {
+    background-position: -61px -4px;
+    width: 57px;
+    height: 57px;
+}
+
+.icone.instagram {
+    background-position: -124px -4px;
+    width: 57px;
+    height: 57px;
+}
+
+.icone.youtube {
+    background-position: -187px -5px;
+    width: 57px;
+    height: 57px;
+}
+
+.icone.snapchat {
+    background-position: -251px -5px;
+    width: 57px;
+    height: 57px;
+}
+
+.icone.spotify {
+    background-position: -315px -5px;
+    width: 57px;
+    height: 57px;
+}

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="./img/icon.png" type="image/gif">
+    <link type="text/css" rel="stylesheet" href="styles/normalize.css">
+    <!--Carousel-->
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <link type="text/css" rel="stylesheet" href="styles/icons.css">
+    <!--[if lt IE 9]>
+        <script src="src/html5shiv.js"></script>
+    <![endif]-->
+    <script src="src/main.js"></script>
+    <script src="https://kit.fontawesome.com/fe71cb5f78.js" crossorigin="anonymous"></script>
+    <script src="src/prefixfree.min.js"></script>
+    <!-- API Youtube-->
+    <script src="src/youtubeapi.js"></script>
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Carousel-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Animação PageScroll-->
+    <script src="./src/jquery.malihu.PageScroll2id.min.js"></script>
+    <title>Alok</title>
+</head>
+
+<body onload="loading()">
+    <div id="loader" class="loader"></div>
+    <div id="all">
+        <div id="banner">
+            <img id="bannerlogo" src="img/logoalok.png" alt="Logo Alok">
+            <img id="banneralok" src="img/banner.png" alt="Banner Alok">
+        </div>
+        <div id="content">
+            <header id="cabecalho">
+                <img id="logo" src="img/minilogo.png" alt="Logo Alok">
+                <nav id="menu">
+                    <a href="#banner" rel="m_PageScroll2id">Home</a>
+                    <a href="#biografia" rel="m_PageScroll2id">Biografia</a>
+                    <a href="#noticias" rel="m_PageScroll2id">Notícias</a>
+                    <a href="#shows" rel="m_PageScroll2id">Shows</a>
+                    <a href="#musicas" rel="m_PageScroll2id">Músicas</a>
+                    <a href="#fotos" rel="m_PageScroll2id">Fotos</a>
+                    <a href="#contato" rel="m_PageScroll2id">Contato</a>
+                </nav>
+            </header>
+            <section id="biografia" class="bio">
+                <h1 class="titulo-pag">Biografia</h1>
+                <div id="texto">
+                    <p>
+                        Alok Achkar Peres Petrillo é um DJ e produtor musical brasileiro de música eletrônica. Desde pequeno, Alok acompanhava seus pais ao lado de seu irmão gêmeo Bhaskar, em suas apresentações de psy trance pelo país.
+                    </p>
+                    <p>
+                        Em 2010, decidiu seguir carreira solo, mudando de gênero para o house music, sendo um dos primeiros a adotar o sub-gênero brazilian bass. Em 2016, ele acabou assinando contrato com a gravadora holandesa Spinnin' Records, lançando logo depois a canção
+                        "Hear Me Now" com Bruno Martini e do cantor e compositor Zeeba, que levou a sua projeção internacional, com a música entrando em paradas de vários países.
+                    </p>
+                    <p>
+                        Acabou se transformando em um dos ícones mais proeminentes da cena eletrônica brasileira, com honrarias e prêmios, tais como; "Melhor DJ do Brasil" pela revista House Mag em 2014 e 2015, e sendo o único brasileiro no top 25 do mundo no ano seguinte pela
+                        revista DJ Mag. Em 2017, ele foi eleito pela Forbes Brasil como uma das 91 pessoas com menos de 30 anos mais influentes do país. Em 2019, Alok foi classificado como o 11º melhor DJ do mundo pela revista DJ Mag, sendo a posição
+                        mais alta ocupada por um brasileiro.
+                    </p>
+                </div>
+                <img src="img/alokbio.png" alt="Foto Alok">
+            </section>
+            <section id="noticias" class="news">
+                <h1 id="titulo-noticias" class="titulo-pag">Notícias</h1>
+                <img id="alok-noticias" src="img/aloknews.png" alt="Foto de Alok">
+                <div class="bloco-news">
+                    <figure>
+                        <img class="alok-news" src="img/alokcard.png" alt="Foto de Alok">
+                        <div class="card-conteudo">
+                            <img class="oglobo-logo" src="img/oglobologo.png" alt="Logo Oglobo">
+                            <a href="www.oglobo.com.br">DJ Alok pede sugestões de fãs para sua primeira live: 'Querem algum remix?'</a>
+                            <p>1 dia atrás</p>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img class="alok-news" src="img/alokcard.png" alt="Foto de Alok">
+                        <div class="card-conteudo">
+                            <img class="oglobo-logo" src="img/oglobologo.png" alt="Logo Oglobo">
+                            <a href="www.oglobo.com.br">DJ Alok pede sugestões de fãs para sua primeira live: 'Querem algum remix?'</a>
+                            <p>1 dia atrás</p>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img class="alok-news" src="img/alokcard.png" alt="Foto de Alok">
+                        <div class="card-conteudo">
+                            <img class="oglobo-logo" src="img/oglobologo.png" alt="Logo Oglobo">
+                            <a href="www.oglobo.com.br">DJ Alok pede sugestões de fãs para sua primeira live: 'Querem algum remix?'</a>
+                            <p>1 dia atrás</p>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img class="alok-news" src="img/alokcard.png" alt="Foto de Alok">
+                        <div class="card-conteudo">
+                            <img class="oglobo-logo" src="img/oglobologo.png" alt="Logo Oglobo">
+                            <a href="www.oglobo.com.br">DJ Alok pede sugestões de fãs para sua primeira live: 'Querem algum remix?'</a>
+                            <p>1 dia atrás</p>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+            <section class="divisor">
+                <div id="player"></div>
+                <div id="bloqueiovid"></div>
+                <div id="redes-sociais">
+                    <h1>Siga Alok nas redes sociais</h1>
+                    <a href="facebook.com"><span class="icone facebook"></span></a>
+                    <a href="twitter.com"><span class="icone twitter"></span></a>
+                    <a href="instagram.com"><span class="icone instagram"></span></a>
+                    <a href="youtube.com"><span class="icone youtube"></span></a>
+                    <a href="snapchat.com"><span class="icone snapchat"></span></a>
+                    <a href="spotify.com"><span class="icone spotify"></span></a>
+                </div>
+            </section>
+            <section id="shows" class="shows">
+                <h1 class="titulo-pag">Shows</h1>
+                <div id="container-shows">
+                    <div class="show">
+                        <div class="barrinha">.
+                        </div>
+                        <div class="esq">
+                            <h2 class="data">JUN 19, 2020</h2>
+                            <p class="descricao">NOS Event Center</p>
+                        </div>
+                        <div class="cen">
+                            <p class="cidade">San Bernardino, CA</p>
+                        </div>
+                        <div class="dir">
+                            <a class="vip">VIP</a>
+                            <a class="tickets">TICKETS</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="barrinha">.
+                        </div>
+                        <div class="esq">
+                            <h2 class="data">JUN 19, 2020</h2>
+                            <p class="descricao">NOS Event Center</p>
+                        </div>
+                        <div class="cen">
+                            <p class="cidade">San Bernardino, CA</p>
+                        </div>
+                        <div class="dir">
+                            <a class="vip">VIP</a>
+                            <a class="tickets">TICKETS</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="barrinha">.
+                        </div>
+                        <div class="esq">
+                            <h2 class="data">JUN 19, 2020</h2>
+                            <p class="descricao">NOS Event Center</p>
+                        </div>
+                        <div class="cen">
+                            <p class="cidade">San Bernardino, CA</p>
+                        </div>
+                        <div class="dir">
+                            <a class="vip">VIP</a>
+                            <a class="tickets">TICKETS</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="barrinha">.
+                        </div>
+                        <div class="esq">
+                            <h2 class="data">JUN 19, 2020</h2>
+                            <p class="descricao">NOS Event Center</p>
+                        </div>
+                        <div class="cen">
+                            <p class="cidade">San Bernardino, CA</p>
+                        </div>
+                        <div class="dir">
+                            <a class="vip">VIP</a>
+                            <a class="tickets">TICKETS</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="barrinha">.
+                        </div>
+                        <div class="esq">
+                            <h2 class="data">JUN 19, 2020</h2>
+                            <p class="descricao">NOS Event Center</p>
+                        </div>
+                        <div class="cen">
+                            <p class="cidade">San Bernardino, CA</p>
+                        </div>
+                        <div class="dir">
+                            <a class="vip">VIP</a>
+                            <a class="tickets">TICKETS</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="barrinha">.
+                        </div>
+                        <div class="esq">
+                            <h2 class="data">JUN 19, 2020</h2>
+                            <p class="descricao">NOS Event Center</p>
+                        </div>
+                        <div class="cen">
+                            <p class="cidade">San Bernardino, CA</p>
+                        </div>
+                        <div class="dir">
+                            <a class="vip">VIP</a>
+                            <a class="tickets">TICKETS</a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <div class="barrinha">.
+                        </div>
+                        <div class="esq">
+                            <h2 class="data">JUN 19, 2020</h2>
+                            <p class="descricao">NOS Event Center</p>
+                        </div>
+                        <div class="cen">
+                            <p class="cidade">San Bernardino, CA</p>
+                        </div>
+                        <div class="dir">
+                            <a class="vip">VIP</a>
+                            <a class="tickets">TICKETS</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="musicas" class="musicas">
+                <h1 class="titulo-pag">Músicas</h1>
+                <div id="conteudo-musica">
+                    <div id="player">
+
+                    </div>
+                    <div id="sptf-perfil">
+                        <img src="img/alok-sptf.png" alt="Foto de Alok">
+                        <h3>Alok</h3>
+                        <p>12.297.202 ouvintes mensais</p>
+                        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:0NGAZxHanS9e0iNHpR8f2W&size=basic&theme=dark&show-count=0" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+                    </div>
+                </div>
+            </section>
+            <section id="fotos" class="fotos">
+                <div class="linha">
+                    <div class="post">
+                        <figure>
+                            <img src="img/Box/imagebox01.png" alt="Foto de Alok">
+                            <figcaption>22:30! Preparados? Qual música não pode faltar? Querem remix de alguma música?</figcaption>
+                        </figure>
+                    </div>
+                    <div class="post">
+                        <figure>
+                            <img src="img/Box/imagebox02.png" alt="Foto de Alok">
+                            <figcaption>22:30! Preparados? Qual música não pode faltar? Querem remix de alguma música?</figcaption>
+                        </figure>
+                    </div>
+                    <div class="post">
+                        <figure>
+                            <img src="img/Box/imagebox03.png" alt="Foto de Alok">
+                            <figcaption>22:30! Preparados? Qual música não pode faltar? Querem remix de alguma música?</figcaption>
+                        </figure>
+                    </div>
+                    <div class="post">
+                        <figure>
+                            <img src="img/Box/imagebox04.png" alt="Foto de Alok">
+                            <figcaption>22:30! Preparados? Qual música não pode faltar? Querem remix de alguma música?</figcaption>
+                        </figure>
+                    </div>
+                    <div class="post">
+                        <figure>
+                            <img src="img/Box/imagebox05.png" alt="Foto de Alok">
+                            <figcaption>22:30! Preparados? Qual música não pode faltar? Querem remix de alguma música?</figcaption>
+                        </figure>
+                    </div>
+                    <div class="post">
+                        <figure>
+                            <img src="img/Box/imagebox06.png" alt="Foto de Alok">
+                            <figcaption>22:30! Preparados? Qual música não pode faltar? Querem remix de alguma música?</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="post">
+                        <figure>
+                            <img src="img/Box/imagebox07.png" alt="Foto de Alok">
+                            <figcaption>22:30! Preparados? Qual música não pode faltar? Querem remix de alguma música?</figcaption>
+                        </figure>
+                    </div>
+                    <div class="post">
+                        <figure>
+                            <img src="img/Box/imagebox08.png" alt="Foto de Alok">
+                            <figcaption>22:30! Preparados? Qual música não pode faltar? Querem remix de alguma música?</figcaption>
+                        </figure>
+                    </div>
+                    <div class="post">
+                        <figure>
+                            <img src="img/Box/imagebox09.png" alt="Foto de Alok">
+                            <figcaption>22:30! Preparados? Qual música não pode faltar? Querem remix de alguma música?</figcaption>
+                        </figure>
+                    </div>
+                    <div class="post">
+                        <figure>
+                            <img src="img/Box/imagebox10.png" alt="Foto de Alok">
+                            <figcaption>22:30! Preparados? Qual música não pode faltar? Querem remix de alguma música?</figcaption>
+                        </figure>
+                    </div>
+                    <div class="post">
+                        <figure>
+                            <img src="img/Box/imagebox11.png" alt="Foto de Alok">
+                            <figcaption>22:30! Preparados? Qual música não pode faltar? Querem remix de alguma música?</figcaption>
+                        </figure>
+                    </div>
+                    <div class="post">
+                        <figure>
+                            <img src="img/Box/imagebox12.png" alt="Foto de Alok">
+                            <figcaption>22:30! Preparados? Qual música não pode faltar? Querem remix de alguma música?</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section id="contato" class="contato">
+                <h1 class="titulo-pag">Contato</h1>
+                <div class="contato-conteudo">
+                    <div class="contato-esq">
+                        <article class="box-contato contratacao">
+                            <h1>CONTRATAÇÕES PARA SHOWS</h1>
+                            <h2>Brasil:</h2>
+                            <div>
+                                <h3>Box Talents:</h3>
+                                <a href="mailto:showsalok@boxtalents.com.br">showsalok@boxtalents.com.br</a><br>
+                                <p>Av Doutor Chucri Zaidan, 1550 - Conjunto 2506 - Santo Amaro - SP</p>
+                                <p>+ 55 11 5181 4479 / + 55 11 5181 4435</p>
+                            </div>
+                            <h2>Europe:</h2>
+                            <div>
+                                <h3>Maria May:</h3>
+                                <a href="mailto:maria.may@caa.com">maria.may@caa.com</a><br>
+                                <h3>Jen Hammel:</h3>
+                                <a href="mailto:jennifer.hammel@caa.com">jennifer.hammel@caa.com</a><br>
+                            </div>
+                            <h2>North & South America:</h2>
+                            <div>
+                                <h3>Rob Markus:</h3>
+                                <a href="mailto:rmarkus@wmeagency.com">rmarkus@wmeagency.com</a><br>
+                                <h3>Jonas Schumann:</h3>
+                                <a href="mailto:JSchumann@wmeagency.com">JSchumann@wmeagency.com</a><br>
+                            </div>
+                            <h2>Asia Pac (Asia / Australia & NZ):</h2>
+                            <div>
+                                <h3>Samuel Wald:</h3>
+                                <a href="mailto:SSW@wmeagency.com">SSW@wmeagency.com</a><br>
+                            </div>
+                        </article>
+                        <article class="box-contato marketing">
+                            <h1>CAMPANHAS, MARKETING E PUBLICIDADE</h1>
+                            <h2>Contato:</h2>
+                            <a href="mailto:contact@alokmusic.com">contact@alokmusic.com</a><br>
+                        </article>
+                    </div>
+                    <div class="contato-dir">
+                        <article class="box-contato assessoria">
+                            <h1>ASSESSORIA DE IMPRENSA E COMUNICAÇÃO</h1>
+                            <h2>Brasil:</h2>
+                            <div>
+                                <h3>PR:</h3>
+                                <a href="mailto:pr@alokmusic.com">pr@alokmusic.com</a><br>
+                            </div>
+                            <h2>Worldwide:</h2>
+                            <div>
+                                <h3>Listen Up:</h3>
+                                <a href="mailto:alok.team@listen-up.biz">alok.team@listen-up.biz</a><br>
+                            </div>
+                        </article>
+                        <article class="box-contato musicman">
+                            <h1>INTERNATIONAL MUSIC MANAGEMENT</h1>
+                            <h2>Relações Internacionais:</h2>
+                            <div>
+                                <h3>Mario Camilleri:</h3>
+                                <a href="mailto:management@knockout-artists.com">management@knockout-artists.com</a><br>
+                            </div>
+                            <h2>Music Management:</h2>
+                            <div>
+                                <h3>Andy Jordens:</h3>
+                                <a href="mailto:andy@knockout-artists.com">andy@knockout-artists.com</a><br>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer">
+            <div class="rodape-div">
+                <div class="rodape-esq">
+                    <div id="newsletter">
+                        <h1>Newsletter</h1>
+                        <p>Preencha os campos abaixo para receber boletins informativos de Alok:</p>
+                        <form class="input-campo" action="https://cfjl.com.br/downloads/ci/post/index.php" method="post">
+                            <input class="input-campo" name="nome" placeholder="Insira seu Nome" type="text" required>
+                            <input class="input-campo" name="email" placeholder="Insira seu melhor E-mail" type="email" required>
+                            <div class="select-box">
+                                <select class="input-campo" name="pais">
+                                    <option value="null" default>Selecione seu País</option>
+                                    <option value="Estados Unidos">Estados Unidos</option>
+                                    <option value="Brasil">Brasil</option>
+                                    <option value="Reino Unido">Reino Unido</option>
+                                    <option value="Irlanda">Irlanda</option>
+                                    <option value="Espanha">Espanha</option>
+                                </select>
+                                <select class="input-campo" name="uf">
+                                    <option value="UF" default>UF</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RS">RS</option>
+                                </select>
+                            </div>
+                            <div class="sexo-box">
+                                <label>Selecione o seu Sexo:</label><br>
+                                <input type="radio" id="masculino" name="genero" value="Masculino">
+                                <label for="masculino">Masculino</label><br>
+                                <input type="radio" id="feminino" name="genero" value="Feminino">
+                                <label for="feminino">Feminino</label>
+                            </div>
+                            <textarea class="input-campo" id="txtarea" name="mensagem" placeholder="Escreva alguma mensagem para Alok" required></textarea>
+                            <div>
+                                <input type="checkbox" id="termos" name="termos" required>
+                                <label for="termos">Desejo receber informações</label>
+                            </div>
+                            <input class="input-campo" type="submit" value="Assinar Newsletter">
+                        </form>
+                    </div>
+                </div>
+                <div class="rodape-cen">
+                    <div class="container">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+
+                                <div class="item active">
+                                    <div class="user-depoimento">
+                                        <div class="depoimento">
+                                            <p>O show do Alok foi um momento único e mágico para cada fã ali presente e pra mim não foi diferente, principalmente por saber que ele reconhece o amor que temos. Retribuindo esse amor de volta em cada palavrinha,
+                                                dizendo como os shows no RS são os melhores, como ele ama o RS e seus fãs, mostrando em suas ações, ao ver que ninguém se importava com a chuva e indo pra chuva também.</p>
+                                        </div>
+                                        <div class="user">
+                                            <div class="user-dir">
+                                                <img src="./img/user01.png" alt="Foto de User">
+                                            </div>
+                                            <div class="user-esq">
+                                                <h1>Alec Lightwood</h1>
+                                                <p>Estados Unidos, NY</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="user-depoimento">
+                                        <div class="depoimento">
+                                            <p>O show do Alok foi um momento único e mágico para cada fã ali presente e pra mim não foi diferente, principalmente por saber que ele reconhece o amor que temos. Retribuindo esse amor de volta em cada palavrinha,
+                                                dizendo como os shows no RS são os melhores, como ele ama o RS e seus fãs, mostrando em suas ações, ao ver que ninguém se importava com a chuva e indo pra chuva também.</p>
+                                        </div>
+                                        <div class="user">
+                                            <div class="user-dir">
+                                                <img src="./img/user02.png" alt="Foto de User">
+                                            </div>
+                                            <div class="user-esq">
+                                                <h1>Olivia Perlman</h1>
+                                                <p>Brasil, RS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="user-depoimento">
+                                        <div class="depoimento">
+                                            <p>O show do Alok foi um momento único e mágico para cada fã ali presente e pra mim não foi diferente, principalmente por saber que ele reconhece o amor que temos. Retribuindo esse amor de volta em cada palavrinha,
+                                                dizendo como os shows no RS são os melhores, como ele ama o RS e seus fãs, mostrando em suas ações, ao ver que ninguém se importava com a chuva e indo pra chuva também.</p>
+                                        </div>
+                                        <div class="user">
+                                            <div class="user-dir">
+                                                <img src="./img/user03.png" alt="Foto de User">
+                                            </div>
+                                            <div class="user-esq">
+                                                <h1>Penny Hofstadter</h1>
+                                                <p>Estados Unidos, CA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rodape-dir">
+                    <h1>Mapa do Site</h1>
+                    <a href="#banner" rel="m_PageScroll2id">Home</a>
+                    <a href="#biografia" rel="m_PageScroll2id">Biografia</a>
+                    <a href="#noticias" rel="m_PageScroll2id">Notícias</a>
+                    <a href="#shows" rel="m_PageScroll2id">Shows</a>
+                    <a href="#musicas" rel="m_PageScroll2id">Músicas</a>
+                    <a href="#fotos" rel="m_PageScroll2id">Fotos</a>
+                    <a href="#contato" rel="m_PageScroll2id">Contato</a>
+                </div>
+                <div class="rodape-copy">
+                    <p>COPYRIGHT © 2020 ALOK PETRILLO. TODOS OS DIREITOS RESERVADOS - Designed by <a href="https://github.com/burinmatheus" target="_blank">Matheus M. Burin</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    function loading() {
+        $('#loader').css('display', 'none');
+    }
+
+    (function($) {
+        $(window).on("load", function() {
+            $("a[rel='m_PageScroll2id']").mPageScroll2id();
+        });
+    })(jQuery);
+</script>
+
+</html>
