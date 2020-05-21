@@ -12,7 +12,17 @@ html {
     margin: 0 auto;
     max-width: 80em;
     min-width: 20em;
-    border: 1px solid red;
+}
+
+#loader {
+    position: fixed;
+    display: block;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/logoalok.png) 50% 50% no-repeat black;
 }
 
 .escurece {
@@ -38,7 +48,7 @@ html {
     width: 100%;
     position: sticky;
     z-index: 10;
-    top: 0;
+    top: -2px;
 }
 
 #content #cabecalho img {
@@ -55,14 +65,13 @@ html {
 
 #content #menu a {
     color: white;
-    font-size: 1.62em;
+    font-size: 1.3em;
     text-decoration: none;
-    margin: 0 .2em;
-    vertical-align: center;
+    margin: 0 .5em;
 }
 
 .titulo-pag {
-    font-size: 4.5em;
+    font-size: 4em;
     color: #484848;
     display: inline-block;
     transform: rotate(-90deg);
@@ -75,7 +84,6 @@ html {
 /*BIOGRAFIA*/
 
 .bio {
-    border: 1px solid white;
     padding-top: 5em;
     position: relative;
 }
@@ -301,7 +309,7 @@ html {
 /*MÚSICAS*/
 
 .musicas {
-    margin-top: 6em;
+    padding: 7em 0;
 }
 
 .musicas #conteudo-musica,
@@ -311,23 +319,72 @@ html {
 
 .musicas #conteudo-musica {
     margin-left: 2em;
+    width: 83%;
+    padding-bottom: 2em;
 }
 
-.musicas #conteudo-musica #spotify {
-    border-radius: 1em;
-    filter: brightness(0.5);
-    transition: 1s;
+.musicas #conteudo-musica .musica-esq,
+.musicas #conteudo-musica #sptf-perfil {
+    width: 49%;
+    text-align: center;
 }
 
-.musicas #conteudo-musica #spotify:hover {
-    border-radius: 1em;
-    filter: brightness(1);
+.musicas #conteudo-musica .musica-esq {
+    vertical-align: top;
+}
+
+.musicas #conteudo-musica .musica-esq h1 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    padding: 0 5em;
+    text-align: justify;
+}
+
+.musicas #conteudo-musica #player {
+    background: rgba(65, 65, 65, 0.34);
+    border-radius: 19px;
+}
+
+.musicas #conteudo-musica #play {
+    position: relative;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.musicas #conteudo-musica #play img:first-child {
+    width: 100%;
+    max-width: 18em;
+    min-width: 12em;
+    border-radius: 15em;
+}
+
+.musicas #conteudo-musica #play img:last-child {
+    position: absolute;
+    left: calc(50% - 3.5em);
+    top: calc(50% - 3.5em);
 }
 
 .musicas #sptf-perfil img {
     border-radius: 10em;
-    width: 300;
+    width: 100%;
+    max-width: 15em;
     height: auto;
+}
+
+.musicas #sptf-perfil h1 {
+    margin: 0;
+    font-size: 2.4em;
+    letter-spacing: 0.05em;
+}
+
+.musicas #sptf-perfil aside {
+    margin: 0;
+    font-size: 0.7em;
+}
+
+.musicas #sptf-perfil iframe {
+    margin: .5em;
 }
 
 
@@ -578,7 +635,7 @@ html {
 /*NEWSLETTER*/
 
 #footer .rodape-esq #newsletter {
-    padding: 2em 2.5em 0 1em;
+    padding: 2em 2.5em 0 2em;
 }
 
 #footer .rodape-esq #newsletter p {

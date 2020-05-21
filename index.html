@@ -245,14 +245,21 @@
             <section id="musicas" class="musicas">
                 <h1 class="titulo-pag">Músicas</h1>
                 <div id="conteudo-musica">
-                    <div id="player">
-                        <span id="play" onclick="abrejanela()">PLAY</span>
+                    <div class="musica-esq">
+                        <div id="player">
+                            <div id="play" onclick="abrejanela()" onmouseover="gira()" onmouseout="para()">
+                                <img id="rotaciona" class="is off" src="./img/albuns/album1.png">
+                                <img alt="Botão de play" src="./img/play.png">
+                            </div>
+                        </div>
+                        <h1>Dê um play e curta as melhores músicas sem sair do site.</h1>
                     </div>
                     <div id="sptf-perfil">
                         <img src="img/alok-sptf.png" alt="Foto de Alok">
-                        <h3>Alok</h3>
-                        <p>12.297.202 ouvintes mensais</p>
-                        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:0NGAZxHanS9e0iNHpR8f2W&size=basic&theme=dark&show-count=0" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+                        <h1>Alok</h1>
+                        <aside>12.297.202 ouvintes mensais</aside>
+                        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:0NGAZxHanS9e0iNHpR8f2W&size=basic&theme=dark&show-count=0" width="93" height="31" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+                        <a href="https://music.apple.com/us/artist/alok/324709167" style="display:inline-block;overflow:hidden;background:url(https://tools.applemusic.com/en-us/lockup.svg?kind=playlist&bubble=apple_music&style=standard-white) no-repeat;background-size: 6em; width: 102px; height: 34.8px;"></a>
                     </div>
                 </div>
             </section>

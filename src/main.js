@@ -38,3 +38,22 @@ function selecionado(elemento) {
     elemento.classList.add('aberto');
     document.getElementById('iframe-musica').src = link;
 }
+
+//ROTACIONA
+function gira() {
+
+    if (document.getElementById('rotaciona').className == 'is off') {
+        document.getElementById('rotaciona').classList.remove('off');
+        document.getElementById('rotaciona').src = './img/albuns/album.gif';
+    }
+
+}
+
+function para() {
+
+    if (document.getElementById('rotaciona').className == 'is') {
+        document.getElementById('rotaciona').classList.add('off');
+        document.getElementById('rotaciona').src = './img/albuns/album1.png';
+    }
+
+}
