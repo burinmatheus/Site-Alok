@@ -43,3 +43,40 @@
     width: 57px;
     height: 57px;
 }
+
+@media only screen and (max-width:600px) {
+    .icone {
+        background-size: 11em;
+        margin: .5em;
+    }
+    .icone.facebook {
+        background-position: 1px -2px;
+        width: 27px;
+        height: 27px;
+    }
+    .icone.twitter {
+        background-position: -28px -2px;
+        width: 27px;
+        height: 27px;
+    }
+    .icone.instagram {
+        background-position: -58px -2px;
+        width: 27px;
+        height: 27px;
+    }
+    .icone.youtube {
+        background-position: -87px -2px;
+        width: 27px;
+        height: 27px;
+    }
+    .icone.snapchat {
+        background-position: -117px -2px;
+        width: 27px;
+        height: 27px;
+    }
+    .icone.spotify {
+        background-position: -147px -2px;
+        width: 27px;
+        height: 27px;
+    }
+}

@@ -63,6 +63,10 @@ html {
     margin-left: 1.8em;
 }
 
+#content #menu i {
+    display: none;
+}
+
 #content #menu a {
     color: white;
     font-size: 1.3em;
@@ -366,7 +370,7 @@ html {
 }
 
 .musicas #sptf-perfil img {
-    border-radius: 10em;
+    border-radius: 13em;
     width: 100%;
     max-width: 15em;
     height: auto;
@@ -795,4 +799,515 @@ html {
 
 #footer .rodape-div .rodape-copy a:hover {
     color: rgba(0, 0, 0, 1);
+}
+
+
+/*BREAK POINTS*/
+
+
+/*Até 1000px*/
+
+@media only screen and (max-width:1000px) {
+    .titulo-pag {
+        font-size: 2.5em;
+        width: .9em;
+    }
+    #banner #bannerlogo {
+        max-width: 15em;
+        top: 194px;
+    }
+    #content #cabecalho {
+        height: 2.3em;
+    }
+    #content #cabecalho img {
+        margin: .2em 0 0 1em;
+        width: 6em;
+        vertical-align: top;
+    }
+    #content #cabecalho #menu {
+        margin-left: 0;
+        vertical-align: sub;
+    }
+    #content #cabecalho a {
+        vertical-align: -webkit-baseline-middle;
+        font-size: 1em;
+    }
+    .bio div {
+        width: 52%;
+        margin: 2.5em 0 2em 2em;
+        font-size: .8em;
+    }
+    .news {
+        padding-top: 3em;
+    }
+    .news #alok-noticias {
+        max-width: 23em;
+    }
+    .news .bloco-news figure {
+        max-width: 8.2em;
+    }
+    .bloco-news figure .card-conteudo img {
+        width: 2.3em;
+    }
+    .bloco-news figure .card-conteudo a {
+        font-size: .7em;
+    }
+    .bloco-news figure .card-conteudo p {
+        font-size: .5em;
+    }
+    .divisor #redes-sociais h1 {
+        font-size: 2.5em;
+    }
+    .show .esq h2 {
+        margin: 0 0 .1em 0;
+        font-size: 1em;
+    }
+    .show .esq p,
+    .show .cen p,
+    .show .dir a {
+        font-size: .67em;
+    }
+    .barrinha {
+        height: 3.4em;
+    }
+    .musicas {
+        padding: 6em 0 3em 0;
+    }
+    .musicas #conteudo-musica #play img:first-child {
+        max-width: 14em;
+        min-width: 7em;
+    }
+    .musicas #conteudo-musica #play img:last-child {
+        width: 4em;
+        left: calc(50% - 2em);
+        top: calc(50% - 2em);
+    }
+    .musicas #conteudo-musica .musica-esq h1 {
+        font-size: .9em;
+    }
+    .musicas #sptf-perfil img {
+        max-width: 12em;
+    }
+    .musicas #sptf-perfil h1 {
+        font-size: 2em;
+    }
+    .musicas #sptf-perfil aside {
+        font-size: 0.6em;
+    }
+    .fotos {
+        height: 21em;
+    }
+    .box-contato.marketing,
+    .box-contato.contratacao,
+    .box-contato.assessoria,
+    .box-contato.musicman {
+        padding: 1.5em;
+    }
+    .contato .contato-conteudo h1 {
+        font-size: 1.1em;
+    }
+    .contato .contato-conteudo h2 {
+        margin: 0.8em 0 0 0;
+        font-size: .7em;
+    }
+    .contato .contato-conteudo h3 {
+        font-size: .7em;
+    }
+    .contato .contato-conteudo a {
+        font-size: .7em;
+    }
+    .contato .contato-conteudo p {
+        font-size: .7em;
+    }
+    #footer {
+        font-size: .8em;
+    }
+    #footer .rodape-cen .container .depoimento {
+        background-size: cover;
+    }
+    #footer .rodape-cen .depoimento p {
+        padding: 3em 4.2em 3.5em 3em;
+    }
+    #footer .rodape-cen .user-esq img {
+        width: 4em;
+    }
+    #footer .rodape-cen .user-dir h1 {
+        font-size: 1.2em;
+    }
+}
+
+
+/*Até 800px*/
+
+@media only screen and (max-width:800px) {
+    #banner #bannerlogo {
+        max-width: 11em;
+        top: 161px;
+    }
+    #content #cabecalho img {
+        width: 5em;
+    }
+    #content #cabecalho a {
+        font-size: .9em;
+        margin: 0 .3em;
+    }
+    #content #cabecalho #menu {
+        margin-left: 1em;
+    }
+    .titulo-pag {
+        font-size: 2em;
+        width: .7em;
+    }
+    .bio {
+        padding-top: 7em;
+    }
+    .bio div {
+        font-size: .75em;
+    }
+    .bio div #meio {
+        display: none;
+    }
+    .news #alok-noticias {
+        max-width: 15em;
+    }
+    .news .bloco-news {
+        width: 47%;
+        margin-top: 0em;
+    }
+    .news .bloco-news figure {
+        max-width: 7.9em;
+    }
+    .news .bloco-news figure:nth-last-child(-n+2) {
+        display: none;
+    }
+    .news #titulo-noticias {
+        margin-right: 0.4em;
+    }
+    .bloco-news figure .card-conteudo p {
+        font-size: .67em;
+    }
+    .divisor {
+        height: 17em;
+    }
+    .divisor #bloqueiovid {
+        height: 17em;
+    }
+    .divisor #player {
+        top: -14em;
+    }
+    .divisor #redes-sociais {
+        top: 6em;
+    }
+    .divisor #redes-sociais h1 {
+        font-size: 1.5em;
+    }
+    .musicas #conteudo-musica .musica-esq h1 {
+        padding: 0 3em;
+    }
+    .fotos {
+        height: 16em;
+    }
+    .contato .contato-conteudo h1 {
+        font-size: .9em;
+    }
+    .contato .contato-conteudo h3 {
+        display: block;
+    }
+    .contato .contato-conteudo a {
+        padding-left: 3em;
+    }
+    .contato .contato-conteudo p {
+        font-size: 0.56em;
+    }
+    #footer {
+        font-size: .64em;
+    }
+    #footer .termos-box label {
+        vertical-align: top;
+    }
+    #footer .rodape-cen .container {
+        padding-bottom: 3.5em;
+    }
+    #footer .rodape-cen .depoimento p {
+        padding: 3em 6em 3.5em 3em;
+    }
+}
+
+
+/*Até 600px*/
+
+@media only screen and (max-width:600px) {
+    #banner #bannerlogo {
+        max-width: 8.5em;
+        top: 121px;
+    }
+    #banner #banneralok {
+        margin-top: 1em;
+        border-bottom: 1px solid white;
+    }
+    #content #cabecalho {
+        position: fixed;
+        height: fit-content;
+    }
+    #content #cabecalho img {
+        width: 5em;
+        margin: .5em calc(50% - 2.5em);
+    }
+    #content #menu i {
+        display: inline-block;
+        cursor: pointer;
+        padding-top: .3em;
+    }
+    #content #cabecalho #menu {
+        display: inline-block;
+        position: absolute;
+        top: .56em;
+        left: .1em;
+        width: 1.3em;
+        height: 1.3em;
+        overflow: hidden;
+        box-shadow: 0.2em 0.2em 0.5em #000;
+        border-radius: .3em;
+        transition: width .5s, height .3s .5s;
+    }
+    #content #cabecalho #menu a {
+        display: block;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.97);
+        border-radius: .3em;
+        margin-top: .3em;
+        padding: .5em;
+    }
+    #content #cabecalho #menu:hover {
+        width: 30%;
+        height: fit-content;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding-bottom: .5em;
+    }
+    .titulo-pag {
+        width: fit-content;
+        height: fit-content;
+        transform: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .bio {
+        padding-top: 3em;
+    }
+    .news .bloco-news {
+        margin: 0;
+        width: 51%;
+    }
+    .news #alok-noticias {
+        max-width: 14em;
+    }
+    .news .bloco-news figure {
+        max-width: 7em;
+    }
+    .shows {
+        border-bottom: 1px solid white;
+        padding-bottom: 1em;
+    }
+    .shows #container-shows {
+        margin-top: 2.5em;
+        margin-left: 2.3em;
+    }
+    .show .esq,
+    .show .cen,
+    .show .dir {
+        width: fit-content;
+    }
+    .show .dir {
+        float: right;
+        margin-right: 0.5em;
+    }
+    .musicas {
+        padding: 5em 0 3em 0;
+    }
+    .musicas #conteudo-musica {
+        padding-top: 3em;
+        margin: 0;
+        width: 100%;
+    }
+    .fotos {
+        height: 24em;
+    }
+    .fotos .linha:last-child {
+        display: none;
+    }
+    .fotos .post {
+        width: calc(100% / 3);
+    }
+    .contato .contato-conteudo {
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: .5em;
+        margin: 3em 0;
+    }
+    .contato .contato-conteudo .contato-esq,
+    .contato .contato-conteudo .contato-dir {
+        width: 100%;
+        display: inline-block;
+    }
+    .contato .contato-conteudo h1 {
+        display: block;
+        font-size: 1.17em;
+        text-align: center;
+    }
+    .contato .contato-conteudo h2 {
+        font-size: .9em;
+    }
+    .contato .contato-conteudo h3,
+    .contato .contato-conteudo a,
+    .contato .contato-conteudo p {
+        font-size: .8em;
+        padding-left: 0;
+    }
+    .contato .contato-conteudo h3 {
+        display: inline-block;
+    }
+    .contato .contato-conteudo .box-contato.marketing h2 {
+        display: inline-block;
+    }
+    .contato .contato-conteudo .contato-dir {
+        margin-top: .5em;
+    }
+    #footer {
+        font-size: 1.5em;
+        padding-top: 3em;
+    }
+    #footer .rodape-div .rodape-cen,
+    #footer .rodape-div .rodape-dir {
+        display: none;
+    }
+    #footer .rodape-div .rodape-esq {
+        width: 100%;
+    }
+    #footer .rodape-esq #newsletter {
+        padding: 3em;
+    }
+    #footer .rodape-div .rodape-copy p {
+        font-size: .38em;
+        padding-bottom: 2em;
+    }
+}
+
+
+/*Até 480px*/
+
+@media only screen and (max-width:480px) {
+    #banner #banneralok {
+        margin-top: 2em;
+    }
+    #banner #bannerlogo {
+        display: none;
+    }
+    .bio img {
+        display: none;
+    }
+    .bio div {
+        box-sizing: border-box;
+        width: 100%;
+        font-size: smaller;
+        margin: 0;
+        padding: 1.2em;
+    }
+    .bio div #meio {
+        display: inline-block;
+    }
+    .news #alok-noticias {
+        display: none;
+    }
+    .news .bloco-news {
+        float: none;
+        width: 100%;
+        padding-bottom: 3em;
+    }
+    .news .bloco-news figure {
+        width: 7em;
+        margin: 0 9% 0 0;
+        float: right;
+    }
+    .news .bloco-news #f1 {
+        float: left;
+        margin: 0 0 0 9%;
+    }
+    .divisor {
+        height: 13em;
+    }
+    .divisor #player {
+        top: -16em;
+    }
+    .divisor #redes-sociais {
+        top: 5em;
+    }
+    .divisor #redes-sociais h1 {
+        font-size: 0.9em;
+    }
+    .shows #container-shows {
+        margin-top: 0;
+        margin-left: 0;
+        padding: .5em;
+        width: 100%;
+    }
+    .show {
+        margin: 1em .1em;
+    }
+    .show:hover .barrinha {
+        display: none;
+    }
+    .show .esq,
+    .show .cen,
+    .show .dir {
+        width: 100%;
+        text-align: center;
+    }
+    .show .dir {
+        float: none;
+        margin: 0;
+    }
+    .show .cen {
+        padding-bottom: .5em;
+    }
+    .show .esq h2 {
+        font-size: 1.2em;
+    }
+    .musicas {
+        padding: 3em 0 3em 0;
+    }
+    .musicas .titulo-pag {
+        display: none;
+    }
+    .musicas #conteudo-musica .musica-esq {
+        display: none;
+    }
+    .musicas #conteudo-musica #sptf-perfil {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .fotos {
+        height: calc(58em - 20%);
+    }
+    .fotos .post {
+        width: calc(100% / 1);
+        padding: .25em .9em;
+    }
+    .linha .post:nth-last-child(-n+4) {
+        display: none;
+    }
+    .contato {
+        padding: 3em 0 0 0;
+    }
+    .contato .contato-conteudo {
+        margin: 3em 0 0 0;
+    }
+    .contato .contato-conteudo .contato-dir {
+        margin-left: 0;
+    }
+    #footer {
+        font-size: 1em;
+    }
 }
