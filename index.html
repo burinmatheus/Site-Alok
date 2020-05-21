@@ -29,6 +29,22 @@
 
 <body onload="loading()">
     <div id="loader" class="loader"></div>
+    <div id="flutuante">
+        <div class="albuns">
+            <img class="album1" onclick="selecionado(this)" alt="Hear Me Tonight" src="./img/albuns/album1.png">
+            <img class="album2" onclick="selecionado(this)" alt="Symphonia" src="./img/albuns/album2.png">
+            <img class="album3" onclick="selecionado(this)" alt="Free My Mind" src="./img/albuns/album3.png">
+            <img class="album4" onclick="selecionado(this)" alt="The Book Is On The Table" src="./img/albuns/album4.png">
+        </div>
+        <div id="opc-player">
+            <span class="opc minimizar" onclick="info()"></span>
+            <span class="opc janela" onclick="info()"></span>
+            <span class="opc fechar" onclick="fechajanela()"></span>
+        </div>
+        <div class="musics">
+            <iframe id="iframe-musica" src="https://open.spotify.com/embed/artist/0NGAZxHanS9e0iNHpR8f2W" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </div>
     <div id="all">
         <div id="banner">
             <img id="bannerlogo" src="img/logoalok.png" alt="Logo Alok">
@@ -230,7 +246,7 @@
                 <h1 class="titulo-pag">Músicas</h1>
                 <div id="conteudo-musica">
                     <div id="player">
-
+                        <span id="play" onclick="abrejanela()">PLAY</span>
                     </div>
                     <div id="sptf-perfil">
                         <img src="img/alok-sptf.png" alt="Foto de Alok">
@@ -394,11 +410,11 @@
                     <div id="newsletter">
                         <h1>Newsletter</h1>
                         <p>Preencha os campos abaixo para receber boletins informativos de Alok:</p>
-                        <form class="input-campo" action="https://cfjl.com.br/downloads/ci/post/index.php" method="post">
+                        <form action="https://cfjl.com.br/downloads/ci/post/index.php" method="post">
                             <input class="input-campo" name="nome" placeholder="Insira seu Nome" type="text" required>
                             <input class="input-campo" name="email" placeholder="Insira seu melhor E-mail" type="email" required>
                             <div class="select-box">
-                                <select class="input-campo" name="pais">
+                                <select class="input-cam" name="pais">
                                     <option value="null" default>Selecione seu País</option>
                                     <option value="Estados Unidos">Estados Unidos</option>
                                     <option value="Brasil">Brasil</option>
@@ -406,7 +422,7 @@
                                     <option value="Irlanda">Irlanda</option>
                                     <option value="Espanha">Espanha</option>
                                 </select>
-                                <select class="input-campo" name="uf">
+                                <select class="input-cam" name="uf">
                                     <option value="UF" default>UF</option>
                                     <option value="RS">RS</option>
                                     <option value="RS">RS</option>
@@ -451,10 +467,10 @@
                                                 dizendo como os shows no RS são os melhores, como ele ama o RS e seus fãs, mostrando em suas ações, ao ver que ninguém se importava com a chuva e indo pra chuva também.</p>
                                         </div>
                                         <div class="user">
-                                            <div class="user-dir">
+                                            <div class="user-esq">
                                                 <img src="./img/user01.png" alt="Foto de User">
                                             </div>
-                                            <div class="user-esq">
+                                            <div class="user-dir">
                                                 <h1>Alec Lightwood</h1>
                                                 <p>Estados Unidos, NY</p>
                                             </div>
@@ -469,10 +485,10 @@
                                                 dizendo como os shows no RS são os melhores, como ele ama o RS e seus fãs, mostrando em suas ações, ao ver que ninguém se importava com a chuva e indo pra chuva também.</p>
                                         </div>
                                         <div class="user">
-                                            <div class="user-dir">
+                                            <div class="user-esq">
                                                 <img src="./img/user02.png" alt="Foto de User">
                                             </div>
-                                            <div class="user-esq">
+                                            <div class="user-dir">
                                                 <h1>Olivia Perlman</h1>
                                                 <p>Brasil, RS</p>
                                             </div>
@@ -487,10 +503,10 @@
                                                 dizendo como os shows no RS são os melhores, como ele ama o RS e seus fãs, mostrando em suas ações, ao ver que ninguém se importava com a chuva e indo pra chuva também.</p>
                                         </div>
                                         <div class="user">
-                                            <div class="user-dir">
+                                            <div class="user-esq">
                                                 <img src="./img/user03.png" alt="Foto de User">
                                             </div>
-                                            <div class="user-esq">
+                                            <div class="user-dir">
                                                 <h1>Penny Hofstadter</h1>
                                                 <p>Estados Unidos, CA</p>
                                             </div>

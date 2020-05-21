@@ -15,6 +15,10 @@ html {
     border: 1px solid red;
 }
 
+.escurece {
+    filter: blur(4px) brightness(0.2);
+}
+
 #banner #banneralok {
     width: 100%;
 }
@@ -327,6 +331,79 @@ html {
 }
 
 
+/*PLAYER FLUTUANTE*/
+
+#flutuante {
+    display: none;
+    position: fixed;
+    top: 1%;
+    width: 75%;
+    left: 12.5%;
+    background: #141414;
+    border-radius: 19px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    z-index: 10000;
+}
+
+#flutuante .albuns {
+    width: 16%;
+}
+
+#flutuante .aberto {
+    filter: brightness(0.2);
+}
+
+#flutuante .albuns img {
+    width: 100%
+}
+
+#flutuante #opc-player {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+#flutuante #opc-player .opc {
+    background-image: url(../img/opc.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin: .2em;
+}
+
+#flutuante #opc-player .minimizar {
+    background-position: 0 0;
+    width: 12px;
+    height: 12px;
+}
+
+#flutuante #opc-player .janela {
+    background-position: -20px 0;
+    width: 12px;
+    height: 12px;
+}
+
+#flutuante #opc-player .fechar {
+    background-position: -40px 0;
+    width: 12px;
+    height: 12px;
+}
+
+#flutuante .musics {
+    position: absolute;
+    top: 3em;
+    right: 2em;
+    width: 75%;
+    height: 83.9%;
+    background-color: #000;
+    border-radius: 19px;
+}
+
+#flutuante .musics iframe {
+    border-radius: 19px;
+}
+
+
 /*FOTOS*/
 
 .fotos {
@@ -384,6 +461,79 @@ html {
 }
 
 
+/*CONTATO*/
+
+.contato {
+    padding: 3em 0;
+}
+
+.contato .contato-conteudo {
+    display: inline-block;
+    width: 84%;
+    margin: 0 0 0 2.3em;
+}
+
+.contato .contato-conteudo .contato-esq,
+.contato .contato-conteudo .contato-dir {
+    width: 49%;
+    display: inline-block;
+}
+
+.contato .contato-conteudo .contato-dir {
+    margin-left: .2em;
+    vertical-align: top;
+}
+
+.box-contato.contratacao,
+.box-contato.assessoria {
+    margin-bottom: .5em;
+}
+
+.box-contato.marketing,
+.box-contato.contratacao,
+.box-contato.assessoria,
+.box-contato.musicman {
+    width: 100%;
+    display: inline-block;
+    background: rgba(65, 65, 65, 0.34);
+    border-radius: 19px;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.contato .contato-conteudo h1 {
+    margin: 0;
+    font-size: 1.4em;
+}
+
+.contato .contato-conteudo h2 {
+    margin: 0.9em 0 0 0;
+    font-size: .8em;
+    font-weight: 900;
+}
+
+.contato .contato-conteudo h3 {
+    margin: 0 0 0 2em;
+    display: inline-block;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.contato .contato-conteudo p {
+    margin: 0 0 0 8em;
+    font-size: .8em;
+    font-weight: lighter;
+}
+
+.contato .contato-conteudo a {
+    margin: 0;
+    display: inline-block;
+    font-size: .8em;
+    font-weight: lighter;
+    color: #C4C4C4;
+}
+
+
 /*FOOTER*/
 
 #footer {
@@ -395,18 +545,28 @@ html {
     color: black;
 }
 
+#footer .rodape-div .rodape-esq {
+    padding-top: 4.8em;
+}
+
 #footer .rodape-div .rodape-esq,
-#footer .rodape-div .rodape-cen,
 #footer .rodape-div .rodape-dir {
-    width: calc(99% / 3);
+    width: 18.8em;
     display: inline-block;
     box-sizing: border-box;
+}
+
+#footer .rodape-div .rodape-cen {
+    width: 24em;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 calc((100% - 63em) / 2);
 }
 
 #footer .rodape-div .rodape-esq h1,
 #footer .rodape-div .rodape-dir h1 {
     color: rgba(239, 239, 239, 0.8);
-    font-size: 48px;
+    font-size: 2.3em;
     text-shadow: 1px 2px 3px #fff, 0 0 0 #000;
     border-bottom: 3px solid rgba(239, 239, 239, 0.8);
     margin: 0;
@@ -417,15 +577,149 @@ html {
 
 /*NEWSLETTER*/
 
+#footer .rodape-esq #newsletter {
+    padding: 2em 2.5em 0 1em;
+}
+
 #footer .rodape-esq #newsletter p {
-    margin: 0;
+    margin: .4em 0;
+    text-align: justify;
+    font-size: .89em;
+}
+
+#footer .rodape-esq #newsletter input::-webkit-input-placeholder,
+#footer .rodape-esq #newsletter textarea::-webkit-input-placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+#footer .rodape-esq #newsletter .input-campo {
+    background-color: rgba(196, 196, 196, 0.32);
+    border-radius: 15px;
+    border: 0;
+    width: 100%;
+    height: 2em;
+    margin: .2em 0;
+    outline: 0;
+    padding-left: .7em;
+    box-sizing: border-box;
+}
+
+#footer .rodape-esq .select-box .input-cam:first-child {
+    width: 73%;
+    background-color: rgba(196, 196, 196, 0.32);
+    border-radius: 15px;
+    border: 0;
+    height: 2em;
+    margin: .2em 0;
+    outline: 0;
+    padding-left: .5em;
+}
+
+#footer .rodape-esq .select-box .input-cam:last-child {
+    width: 25%;
+    background-color: rgba(196, 196, 196, 0.32);
+    border-radius: 15px;
+    border: 0;
+    height: 2em;
+    margin: .2em 0;
+    outline: 0;
+    padding-left: .5em;
+}
+
+#footer .rodape-esq .sexo-box {
+    margin: .2em 0;
+}
+
+#footer .rodape-esq .sexo-box input {
+    margin: .2em 0 .2em 1.5em;
+    outline: 0;
+}
+
+#footer .rodape-esq #newsletter textarea#txtarea {
+    resize: none;
+    height: 5em;
+    padding: .5em;
+    box-sizing: border-box;
+}
+
+#footer .rodape-esq #newsletter input[type=submit] {
+    margin-top: .8em;
+    height: 2.2em;
 }
 
 
 /*DEPOIMENTOS*/
 
+#footer .rodape-cen .container {
+    padding-bottom: 1.5em;
+}
+
+#footer .rodape-cen .container .depoimento {
+    background-image: url(../img/caixadetexto.svg);
+    background-repeat: no-repeat;
+}
+
+#footer .rodape-cen .depoimento p {
+    font-size: .8em;
+    padding: 3em 4.2em 3em 3em;
+    text-align: justify;
+}
+
+#footer .rodape-cen .container .user {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#footer .rodape-cen .user-dir,
+#footer .rodape-cen .user-esq {
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+}
+
+#footer .rodape-cen .user-esq img {
+    border-radius: 50px;
+}
+
+#footer .rodape-cen .user-dir h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#footer .rodape-cen .user-dir p {
+    margin: 0;
+    font-size: 0.74em;
+}
+
+#footer .rodape-cen .carousel-indicators {
+    bottom: -38px;
+}
+
+#footer .rodape-cen .carousel-indicators li {
+    background: #C4C4C4;
+}
+
+#footer .rodape-cen .carousel-indicators .active {
+    background: #E2E2E2;
+}
+
+#footer .rodape-cen .carousel-control {
+    display: none;
+}
+
 
 /*MAPA DO SITE*/
+
+#footer .rodape-dir {
+    padding: 2em;
+}
+
+#footer .rodape-dir a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: .5em 0 0 2em;
+}
 
 
 /*RODAPÉ COPY*/
